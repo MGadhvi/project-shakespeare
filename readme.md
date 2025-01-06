@@ -32,40 +32,40 @@ To set up the project locally, follow these steps:
 
 1. **Clone the repository**:
 
-   ```bash
+   ```
    git clone https://github.com/MGadhvi/project-shakespeare
    cd project-shakespeare
    ```
    
 2. **Create a virtual environment (optional but recommended)**: 
    
-   ```bash
+   ```
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
 3. **Install the required packages**:
    
-   ```bash
+   ```
    pip install -r requirements.txt
    ```
 4. **Set up environment variables**:
 
 Create a .env file in the root directory of the project and add your environment variables. For example:
 
-	```bash
-	DEBUG=True
-	DATABASE_URL=postgres://user:password@localhost:5432/dbname
-	```
+   ```
+   DEBUG=True
+   DATABASE_URL=postgres://user:password@localhost:5432/dbname
+   ```
     
 5. **Run database migrations** :
-   ```bash
+   ```
    python manage.py migrate
    ```
 6. **Run the development server**: 
 	
-	```bash
-	python manage.py runserver
-	```
+   ```
+   python manage.py runserver
+   ```
 7. **Access the application**:
 
 Open your web browser and go to [http://127.0.0.1:8000](http://127.0.0.1:8000) to view the frontend. 
