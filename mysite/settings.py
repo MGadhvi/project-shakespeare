@@ -64,6 +64,7 @@ TEMPLATES = [
         'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
+            'options': '-c search_path=shakespeare',
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
